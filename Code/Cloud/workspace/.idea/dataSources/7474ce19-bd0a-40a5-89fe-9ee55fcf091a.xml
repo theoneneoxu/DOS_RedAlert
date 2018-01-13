@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails workspace: development">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="cui">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sakila"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="workspace_test"/>
+    <schema id="8" name="world"/>
+    <table id="9" parent="1" name="ar_internal_metadata"/>
+    <table id="10" parent="1" name="devices"/>
+    <table id="11" parent="1" name="schema_migrations"/>
+    <column id="12" parent="9" name="key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="13" parent="9" name="value">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="9" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="15" parent="9" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="16" parent="9" name="PRIMARY">
+      <columns>key</columns>
+      <primary>1</primary>
+    </key>
+    <column id="17" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="18" parent="10" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="19" parent="10" name="ip">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="10" name="status">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="10" name="alarm_by_button">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="10" name="alarm_by_sensor">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="10" name="alarm_status_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="10" name="temp">
+      <data-type>decimal(10)|0</data-type>
+    </column>
+    <column id="25" parent="10" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="26" parent="10" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="27" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="28" parent="11" name="version">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="29" parent="11" name="PRIMARY">
+      <columns>version</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
